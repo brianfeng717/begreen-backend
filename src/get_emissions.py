@@ -7,12 +7,13 @@ from datetime import datetime, timedelta
 today = datetime.now()
 tomorrow = today + timedelta(1)
 tomorrow = str(tomorrow.strftime('%Y-%m-%d'))
+today = str(today.strftime('%Y-%m-%d'))
 
 param = {
     'location': 'eastus',
     'windowSize': 1,
-    'dataStartAt': tomorrow+'T00:40:00Z',
-    'dataEndAt': tomorrow+'T10:00:00Z'
+    'dataStartAt': today+'T08:00:00Z',
+    'dataEndAt': today+'T23:59:00Z'
 }
 
 header = {
