@@ -3,7 +3,7 @@ from requests.auth import HTTPBasicAuth
 from os import path
 import pandas as pd
 from datetime import datetime, timedelta
-  
+
 today = datetime.now()
 tomorrow = today + timedelta(1)
 tomorrow = str(tomorrow.strftime('%Y-%m-%d'))
