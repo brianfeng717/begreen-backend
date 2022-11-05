@@ -53,7 +53,7 @@ def get_users():
 
 
 def main():
-    get_users()
+    print(get_users())
 
 
 if __name__ == "__main__":
